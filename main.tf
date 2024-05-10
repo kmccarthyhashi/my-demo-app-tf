@@ -28,8 +28,8 @@ module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "5.8.1"
 
-  cidr_vpc = "10.1.0.0/16"
-  cidr_subnet = "10.1.0.0/24"
+  cidr = "10.1.0.0/16"
+  private_subnets = ["10.1.0.0/24"]
   tags = local.tags
 }
 
