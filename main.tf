@@ -6,10 +6,10 @@ terraform {
     }
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 4.42.0"
+      version = ">= 5.30"
     }
   }
-  required_version = ">= 0.14.5"
+  required_version = ">= 1.0"
 }
 
 provider "aws" {
@@ -26,7 +26,7 @@ locals {
 
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
-  version = "0.0.2"
+  version = "5.8.1"
 
   cidr_vpc = "10.1.0.0/16"
   cidr_subnet = "10.1.0.0/24"
