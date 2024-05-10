@@ -26,7 +26,7 @@ locals {
 
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
-  version = "5.6.0"
+  version = "4.0.0"
 
   cidr_vpc = "10.1.0.0/16"
   cidr_subnet = "10.1.0.0/24"
