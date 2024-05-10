@@ -25,7 +25,7 @@ locals {
 }
 
 module "vpc" {
-  source  = "app.terraform.io/KELLY-training/vpc/aws""
+  source  = "./terraform-aws-modules/vpc/aws""
   version = "5.8.1"
 
   cidr_vpc = "10.1.0.0/16"
