@@ -60,4 +60,3 @@ resource "aws_instance" "ubuntu" {
 
   tags = local.tags
 }
-
