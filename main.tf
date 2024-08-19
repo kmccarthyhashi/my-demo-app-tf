@@ -61,7 +61,7 @@ resource "aws_instance" "ubuntu" {
   tags = local.tags
 }
 
-resource "aws_instance" "ubuntu" {
+resource "aws_instance" "new" {
   ami                         = data.aws_ami.ubuntu.id
   instance_type               = "t2.micro"
   subnet_id                   = module.vpc.subnet_id
