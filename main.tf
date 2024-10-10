@@ -70,5 +70,3 @@ resource "aws_instance" "new" {
 
   tags = local.tags
 }
-
-# new comment
